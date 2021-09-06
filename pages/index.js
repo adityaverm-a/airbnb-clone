@@ -18,7 +18,7 @@ export default function Home({ mediumCardData, smallCardData }) {
       <Header />
       <Banner />
 
-      <main className='max-w-7xl mx-auto px-8 sm:px-16'> 
+      <main className='max-w-screen-2xl mx-auto px-8 sm:px-16'> 
         <section className='pt-6'>
           <h2 className='text-4xl font-semibold pb-5'>Explore Nearby</h2>
 
@@ -51,10 +51,10 @@ export default function Home({ mediumCardData, smallCardData }) {
         </section>
 
         <LargeCard
-          img='https://links.papareact.com/4cj'
-          buttonText='Get Inspired'
-          title='The Greatest Outdoors'
-          description='Whislists curated by Airbnb'
+          img='https://res.cloudinary.com/airbnb-clone-dusky/image/upload/v1630846733/airbnb-clone/try-hosting_wbhdtw.jpg'
+          buttonText='Learn More'
+          title='Try hosting'
+          description='Earn extra income and earn new opportunites by sharing your space'
         />
       </main>
 
@@ -66,12 +66,12 @@ export default function Home({ mediumCardData, smallCardData }) {
 
 // Static Site Rendering
 export async function getStaticProps() {
-  const smallCardData = await fetch('https://links.papareact.com/pyp')
+  const smallCardData = await fetch('https://jsonkeeper.com/b/VWPD')
     .then(
       (res) => res.json()
     )
 
-  const mediumCardData = await fetch('https://links.papareact.com/zp1')
+  const mediumCardData = await fetch('https://jsonkeeper.com/b/VHHT')
       .then(
         (res) => res.json()
       )

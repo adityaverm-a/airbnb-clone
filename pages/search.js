@@ -3,6 +3,7 @@ import Footer from "../components/Footer"
 import Header from "../components/Header"
 import { format } from "date-fns"
 import InfoCard from "../components/InfoCard"
+import Map from "../components/Map"
 
 const Search = ({ searchResults }) => {
     const router = useRouter()
@@ -17,6 +18,7 @@ const Search = ({ searchResults }) => {
         <div>
             <Header placeholder={`${location} | ${range} | ${noOfGuest} Guests`}/>
 
+            {/* <main className='flex max-w-7xl mx-auto xl:max-w-max'> */}
             <main className='flex'>
                 <section className='flex-grow pt-14 px-6'>
                     <p className='text-xs'>300+ Stays - {range} - for {noOfGuest} number of guests</p>
@@ -47,6 +49,10 @@ const Search = ({ searchResults }) => {
                         ))}
                     </div>
                 </section>
+
+                <section className='hidden xl:inline-flex xl:min-w-[600px]'>
+                    <Map searchResults={searchResults} />
+                </section>
             </main>
 
             <Footer/>
@@ -57,7 +63,7 @@ const Search = ({ searchResults }) => {
 export default Search
 
 export async function getServerSideProps() {
-    const searchResults = await fetch('https://links.papareact.com/isz')
+    const searchResults = await fetch('https://jsonkeeper.com/b/RRKA')
         .then(
             (res) => res.json()
         )

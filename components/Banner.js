@@ -4,7 +4,7 @@ const Banner = () => {
     return (
         <div className='relative h-[300px] sm:h-[400px] lg:h-[500px] xl:h-[600px] 2xl:h-[700px]'>
             <Image 
-                src='https://links.papareact.com/0fm'
+                src='https://res.cloudinary.com/airbnb-clone-dusky/image/upload/v1630846086/airbnb-clone/banner_gjj3m0.jpg'
                 layout='fill'
                 objectFit='cover'
             />

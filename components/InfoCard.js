@@ -1,8 +1,12 @@
+import { useState } from "react"
 import Image from "next/image"
 import { StarIcon } from "@heroicons/react/solid"
+import { HeartIcon as HeartFullIcon } from "@heroicons/react/solid"
 import { HeartIcon } from "@heroicons/react/outline"
 
 const InfoCard = ({ description, img, lat, location, long, price, star, title, total }) => {
+    const [like, setLike] = useState('false')
+
     return (
         <div className='flex items-center py-7 px-2 pr-4 border-b cursor-pointer hover:opacity-80 hover:shadow-lg transition duration-200 ease-out first:border-t'>
             <div className='relative h-44 w-40 md:h-52 md:w-80 flex-shrink-0'>
@@ -16,7 +20,11 @@ const InfoCard = ({ description, img, lat, location, long, price, star, title, t
             <div className='flex flex-col flex-grow pl-5'>
                 <div className='flex justify-between'>
                     <p>{location}</p>
-                    <HeartIcon className='h-7 cursor-pointer' />
+                    {like ? (
+                        <HeartIcon className='h-7 cursor-pointer' onClick={() => setLike(!like)}/>
+                    ) : (
+                        <HeartFullIcon className='text-red-400 h-7 cursor-pointer' onClick={() => setLike(!like)}/>
+                    )}
                 </div>
 
                 <h4 className='text-xl'>{title}</h4>
