@@ -2,7 +2,7 @@
 
 This is an Airbnb Clone build with NextJS, Tailwind And MapBox.
 
-Deployed it to the cloud with [Vercel](airbnb-clone-dusky-mu.vercel.app) 
+Deployed it to the cloud with [Vercel](https://airbnb-clone-dusky-mu.vercel.app) 
 
 
 ## Getting Started
