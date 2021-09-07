@@ -15,16 +15,21 @@ Deployed it to the cloud with [Vercel](https://airbnb-clone-dusky-mu.vercel.app)
 - Implemented MapBox for realtime location:
 ![Screenshot 2021-09-07 at 11 52 13 AM](https://user-images.githubusercontent.com/67803385/132295187-0bf4a939-69ac-4a92-9073-37e46d51a90f.png)
 
-## Getting Started
+## Quick Start 🚀
 
-Install the dependencies and run the development server
+### Install server dependencies
 
 ```bash
 npm install
-npm run dev
 # or
 yarn
-yarn dev
 ```
 
+### Run the development server
+
+```bash
+npm run dev
+# or
+yarn dev
+```
 
