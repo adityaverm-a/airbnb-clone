@@ -4,6 +4,8 @@ This is an Airbnb Clone build with NextJS, Tailwind And MapBox.
 
 Deployed it to the cloud with [Vercel](https://airbnb-clone-dusky-mu.vercel.app) 
 
+PS~ I've plans to make it a full stack app in the future, with GraphQL and will try to figure out the tech stack for this.
+
 ## Learnings
 
 - I've used Static Site Generation for rendering the static data on the index page:
