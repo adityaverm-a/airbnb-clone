@@ -1,4 +1,5 @@
 # Airbnb Clone 
+> for fun and learning purpose
 
 This is an Airbnb Clone build with NextJS, Tailwind And MapBox.
 
